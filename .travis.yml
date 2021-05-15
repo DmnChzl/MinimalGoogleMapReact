@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - '14'
+cache: yarn
+install:
+  - yarn install
+jobs:
+  include:
+    - stage: Test x Build
+      script:
+        - yarn test
+        - yarn build
+    - stage: NPM Release
+      script: yarn build
+      deploy:
+        provider: npm
+        email: '$NPM_EMAIL'
+        api_key: '$NPM_TOKEN'
+        skip_cleanup: true
+        on:
+          tags: true
+branches:
+  only:
+    - main
+    - /^v[0-9]+.*$/

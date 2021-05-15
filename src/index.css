@@ -1,0 +1,4 @@
+.container {
+  height: calc(100vh - 1rem);
+  width: calc(100vw - 1rem);
+}
