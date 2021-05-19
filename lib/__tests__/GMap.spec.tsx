@@ -12,6 +12,8 @@ describe('<GMap />', () => {
 
   it('Should Renders MNML Element', () => {
     const { container } = render(<GMap apiKey={API_KEY} />);
-    expect(container.querySelector('#mnml-gmap')).toBeInTheDocument();
+    const mnmlElement = container.querySelector('#mnml-gmap');
+    expect(mnmlElement).toBeInTheDocument();
+    expect(mnmlElement).toHaveStyle({ height: '100%' });
   });
 });
