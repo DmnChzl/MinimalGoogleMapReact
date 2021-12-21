@@ -1,9 +1,9 @@
 {
-  "name": "@mrdoomy/mnml-gmap-react",
-  "version": "0.1.0",
+  "name": "@dmnchzl/mnml-gmap-react",
+  "version": "0.1.1",
   "description": "React: Minimal Google Map",
   "author": "Damien Chazoule <damien.chazoule@gmail.com>",
-  "repository": "https://github.com/mrdoomy/minimalgooglemapreact.git",
+  "repository": "https://github.com/dmnchzl/minimalgooglemapreact.git",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
